@@ -1,11 +1,17 @@
 import React from "react";
 import './Comentario.css'
 
-const Comentario = () => (
+const Comentario = (props) => {
+    
+
+    return (
     <div className="Comentario">
-        <h2>Lincoln</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas facere eaque quaerat eum velit, praesentium veritatis aliquam fuga sequi nulla expedita repudiandae ipsa iusto? Molestias nobis voluptates minus odio.</p>
+        <h2>{props.nome}</h2>
+        <p>{props.email}</p>
+        <p>{props.children}</p>
+        <p>{props.data.toString()}</p>
     </div>
-)
+    )
+}
 
 export default Comentario;
