@@ -38,6 +38,8 @@ class App extends Component {
         //     comentarios: lista
         // })
 
+
+        // dessa forma é melhor do que a de cima!
         this.setState({
             comentarios: [...this.state.comentarios, novoComentario]
         })
